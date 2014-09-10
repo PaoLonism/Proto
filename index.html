@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MyApp</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body style="background-color:#000;">
+<div data-role="page" id="pageone" class="page1" style="background-color:#FF3;">
+<center>
+<img src="img/health.png" width="70%"><br /><br />
+	<a href="#pagetwo" data-transition="slideup">
+		<img src="img/click.png" width="30%" height="8%">
+	</a>
+</center><br /><br /><br /><br />
+</div>
+
+
+<div data-role="page" id="pagetwo" style="background-color:#333">
+<div id="2page" style="color:#FFF"><h2><center>Choose a Task:</center></h2></div>
+<br />
+<br />
+<a href="#pageone" data-transition="fade">
+<div align="center"><img id="img1" src="img/icon1.png" height="150" width="250"/></div></a>
+<br />
+<br />
+<a href="#request" data-transition="pop">
+<div align="center"><img id="img2" src="img/icon2.png" height="150" width="250"/></div></a>
+<br />
+<br />
+<a href="#search" data-transition="slidedown">
+<div align="center"><img id="img3" src="img/icon3.png" height="150" width="250"/></div></a><br /><br /><br />
+</div>
+
+<div data-role="page" id="search" style="background-color:#000">
+<br />
+&nbsp; <a href="#pagetwo" data-transition="slide"><img id="back" src="img/back.png" height="50" width="16%"/></a>
+<br />
+<br />
+<select name="select">
+  <option selected="Choose specialization:">Choose specialization:</option>
+  <option value="Physician">Physician</option>
+  <option value="Cardiologist">Cardiologist</option>
+  <option value="Psychologist">Psychologist</option>
+  <option value="Dentist">Dentist</option>
+</select>
+<br />
+<br />
+<select>
+  <option selected="Choose location:">Choose location:</option>
+  <option value="Manila">Manila</option>
+  <option value="Bulacan">Bulacan</option>
+  <option value="Batangas">Batangas</option>
+  <option value="Cavite">Cavite</option>
+</select>
+<br />
+<br />
+<br />
+<a href="#results" data-transition="fade"><button type="button">SEARCH</button></a>
+</div>
+
+<div data-role="page" id="results" style="background-color=#333">
+<br />
+&nbsp; <a href="#pagetwo" data-transition="slide"><img id="back" src="img/back2.png" height="50" width="15%"/></a>
+<br />
+
+<h2><center><strong>Search results:</strong></center></h2>
+<table width="58%" height="320" border="1" align="center" cellpadding="2" cellspacing="10">
+  <tr>
+    <th scope="col">Photo</th>
+    <th scope="col">Name</th>
+    <th scope="col">Clinic Address</th>
+    <th scope="col">Appointments</th>
+    <th scope="col">Request Appointment</th>
+  </tr>
+  <tr>
+    <td>InsertPhoto</td>
+    <td>NameOfDoctor</td>
+    <td>ExactAddress</td>
+    <td><button type="button">View Appointments</button></td>
+    <td><a href="#request" data-transition="pop"><button type="button">Request an Appointment</button></a></td>
+  </tr>
+  <tr>
+    <td>InsertPhoto</td>
+    <td>NameOfDoctor</td>
+    <td>ExactAddress</td>
+    <td><button type="button">View Appointments</button></td>
+    <td><a href="#request" data-transition="pop"><button type="button">Request an Appointment</button></a></td>
+  </tr>
+  <tr>
+    <td height="72">InsertPhoto</td>
+    <td>NameOfDoctor</td>
+    <td>ExactAddress</td>
+    <td><button type="button">View Appointments</button></td>
+    <td><a href="#request" data-transition="pop"><button type="button">Request an Appointment</button></a></td>
+  </tr>
+</table>
+
+</div>
+
+
+<div data-role="page" id="request">
+  <iframe src="https://docs.google.com/forms/d/11H6PUwnZhgni6w5M52rtgudc2RFYX-7AXNxxnIHniac/viewform?usp=send_form" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Please wait...</iframe>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+div img #img1{
+	float:right;
+	alignment-adjust:central;
+	padding: 10px;
+}
+
+div img #img2{
+	float:right;
+	alignment-adjust:central;
+	padding: 10px;
+}
+
+div img #img3{
+	float:right;
+	alignment-adjust:central;
+	padding: 10px;
+}
+
+div #search{
+	alignment-adjust:central;
+	padding: 20px;
+	margin:auto;
+}
+
+div #results{
+	alignment-adjust:central;
+	padding: auto;
+	margin: auto;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+div #2page{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	text-decoration:underline;
+	text-align:center;
+	color:#FFF;
+}
+
+a:hover{
+	text-decoration: none;
+}
